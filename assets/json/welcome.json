@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "pid": 0,
+        "name": "欢迎",
+        "show": "docs/help/welcome.md"
+    },
+    {
+        "id": 2,
+        "pid": 0,
+        "name": "快速上手",
+        "show": "docs/help/quick.md"
+    },
+    {
+        "id": 3,
+        "pid": 0,
+        "name": "使用手册",
+        "show": "docs/help/document.md"
+    }
+]

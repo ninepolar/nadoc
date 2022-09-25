@@ -1,0 +1,150 @@
+/* Style */
+
+:root {
+  --background: #fad7fcab;
+  --secondary: #e3a9fde7;
+  --border: #e793f8;
+  --color: #d03cdd;
+  --pln: #3c484d;
+}
+
+.alert-secondary {
+  background-color: var(--background);
+  border:1px solid var(--border);
+  color: var(--color);
+}
+.alert::before{
+  content: ' TIPS: ';
+  
+}
+
+pre.prettyprint {
+  background: #fbfbfb;
+  font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
+  border: 1px solid var(--border) !important;
+  /* border-left: 4px solid var(--border) !important; */
+  border-radius: 6px 0 0 6px;
+  color: var(--color);
+  line-height: 21px;
+  padding: 30px;
+  font-size: 12px;
+  letter-spacing: -0.25px;
+  tab-size: 4;
+  -moz-tab-size: 4;
+  white-space: pre-wrap!important;
+word-wrap: break-word!important;
+*white-space:normal!important;
+}
+
+.pln {
+  color: var(--pln)
+}
+
+/* Specify class=linenums on a pre to get line numbering */
+ol.linenums {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--color);
+}
+
+li.L0,
+li.L1,
+li.L2,
+li.L3,
+li.L4,
+li.L5,
+li.L6,
+li.L7,
+li.L8,
+li.L9 {
+  padding-left: 1em;
+  list-style-type: decimal;
+}
+
+@media screen {
+
+  /* string content */
+
+  .str {
+    color: #568c3b;
+  }
+
+  /* keyword */
+
+  .kwd {
+    color: #6b6bb8;
+  }
+
+  /* comment */
+
+  .com {
+    color: #7195a8;
+  }
+
+  /* type name */
+
+  .typ {
+    color: #257fad;
+  }
+
+  /* literal value */
+
+  .lit {
+    color: #935c25;
+  }
+
+  /* punctuation */
+
+  .pun {
+    color: #161b1d;
+  }
+
+  /* lisp open bracket */
+
+  .opn {
+    color: #161b1d;
+  }
+
+  /* lisp close bracket */
+
+  .clo {
+    color: #161b1d;
+  }
+
+  /* markup tag name */
+
+  .tag {
+    color: #d22d72;
+  }
+
+  /* markup attribute name */
+
+  .atn {
+    color: #935c25;
+  }
+
+  /* markup attribute value */
+
+  .atv {
+    color: #2d8f6f;
+  }
+
+  /* declaration */
+
+  .dec {
+    color: #935c25;
+  }
+
+  /* variable name */
+
+  .var {
+    color: #d22d72;
+  }
+
+  /* function name */
+
+  .fun {
+    color: #257fad;
+  }
+
+}

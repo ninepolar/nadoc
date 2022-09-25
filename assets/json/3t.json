@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "pid": 0,
+        "name": "序言",
+        "show": "docs/3t/readme.md"
+    },
+    {
+        "id": 2,
+        "pid": 0,
+        "name": "第一部",
+        "show": "docs/3t/1.md"
+    },
+    {
+        "id": 3,
+        "pid": 0,
+        "name": "第二部",
+        "show": "docs/3t/2.md"
+    },
+    {
+        "id": 4,
+        "pid": 0,
+        "name": "第三部",
+        "show": "docs/3t/3.md"
+    },
+    {
+        "id": 5,
+        "pid": 0,
+        "name": "番外",
+        "show": "docs/3t/other.md"
+    }
+]

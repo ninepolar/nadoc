@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <!-- 必须的 meta 标签 -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap 的 CSS 文件 -->
+  <link rel="stylesheet" href="./vendor/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./vendor/bootstrap-icons/1.9.0/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/cms/css/nui.css">
+  <script src="./vendor/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./vendor/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+  <script src="./assets/cms/js/nui.js"></script>
+  <title>NaDoc 九方文档</title>
+</head>
+
+<body>
+  <a href="https://github.com/ninepolar/nadoc" target="_blank" class="github-corner" aria-label="View source on Github">
+    <svg width="80" height="80" viewBox="0 0 250 250"
+      style="fill:#202020; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true">
+      <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+      <path
+        d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+        fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+      <path
+        d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+        fill="currentColor" class="octo-body"></path>
+    </svg>
+  </a>
+  <nav class="navbar fixed-top blur shadow navbar-expand-lg navbar-light bg-light mt-3">
+
+    <div class="container-fluid px-0">
+
+      <a class="navbar-brand ms-3" href="./index.html" rel="tooltip" title="九方设计" data-placement="bottom">
+        <svg width="54" height="36" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <title>imccc.cc</title>
+            <g stroke="null" id="svg_c_1">
+              <path stroke="null" id="svg_c_2" fill="#ff5656" opacity="NaN"
+                d="m13.20005,27.94907c0,0 -4.6097,2.3792 -8.55026,-1.0409c-3.94056,-3.42011 -2.71378,-8.73615 -1.487,-10.40902c1.22678,-1.67287 3.19704,-3.7175 6.17106,-3.79185c2.97402,-0.07436 3.49445,1.0409 3.49445,1.0409c0,0 -2.2305,-3.27141 -8.10416,-0.7435c-5.87366,2.5279 -4.60971,8.92201 -4.60971,8.92201c0,0 0.2974,4.9071 4.60971,6.91456c4.31231,2.00745 8.47591,-0.8922 8.47591,-0.8922z" />
+              <path stroke="null" id="svg_c_3"
+                d="m24.07607,11.48807c0.15566,-0.722 0.25941,-0.95627 -0.02091,-2.8468c-0.28032,-1.89053 -1.04465,-3.14594 -2.53542,-4.18909c-1.49076,-1.04315 -4.44823,-1.85725 -6.9048,-0.37025c-2.45656,1.487 -3.11144,2.74269 -3.27666,5.09786c-0.16522,2.35517 1.63871,4.4197 1.63871,4.4197c0.30041,0.45061 -1.7799,-0.8907 -2.30335,-2.60376c-0.52345,-1.71306 -0.66765,-5.05355 1.70855,-7.21045c2.3762,-2.15691 5.68629,-3.35026 9.21941,-1.11525c3.53313,2.23501 3.3465,5.49885 3.28069,6.32902l-0.26955,1.29195l-0.53668,1.19707l0,0l0,0l0,-0.00001z"
+                opacity="NaN" fill="#f79438" />
+              <path stroke="null" id="svg_c_4"
+                d="m24.97022,9.04979l0.23019,-2.41027l0.45144,-1.49628c0.78136,-1.44585 1.53506,-2.37922 2.57878,-2.94115c1.04373,-0.56193 2.84478,-0.79695 4.425,-0.52921c1.58022,0.26774 2.75375,1.03825 3.47177,1.74389c1.43605,1.41128 1.87184,2.33506 2.06172,3.95748c0.18987,1.62242 -0.28693,3.20063 -0.65152,3.8678c-0.72906,1.33451 -1.12256,1.42813 -1.12256,1.42813c0,0 2.00309,-1.22172 2.67435,-3.70363c0.67132,-2.48183 -0.02077,-5.3243 -2.15134,-6.98664c-2.13056,-1.66233 -4.67728,-2.56082 -7.89462,-1.56193c-3.21733,0.99889 -3.95516,3.28537 -4.29494,4.90604l-0.0342,1.81329l0.25594,1.91248l0,0l0,0l0,0l0.00001,-0.00001l0,0z"
+                opacity="NaN" stroke-opacity="0" fill="#ffff00" />
+              <path stroke="null" id="svg_c_5"
+                d="m50.30075,16.38763c0.96656,-4.461 -1.59853,-8.43874 -5.6506,-8.92201c-4.05207,-0.48327 -6.17106,2.75095 -6.17106,2.75095c0,0 1.85876,-2.67661 3.42011,-3.27141c1.56136,-0.5948 3.42011,-1.0409 6.24541,0.2974c2.82529,1.33831 3.94056,4.90711 3.71751,7.50936c-0.22305,2.60225 -2.23051,4.7584 -2.60225,4.9071c-1.30108,0.70631 -3.45725,0.98516 -4.64685,1.26397l2.36056,-0.49261l1.65432,-1.34758l1.67287,-2.69519l0,0l0,0l0,0l-0.00002,0z"
+                opacity="NaN" fill="#00ffff" />
+              <path stroke="null" id="svg_c_6" fill="#00bf5f" opacity="NaN"
+                d="m41.18473,30.5037c0.48444,0.68193 1.42541,1.43705 2.35943,1.8785c0.93402,0.44146 1.62874,0.55995 3.2145,0.50303c1.58575,-0.05693 3.87669,-1.18142 5.66108,-4.3042c0.5205,-1.67291 1.09663,-3.30863 0.37169,-5.03726c-0.72495,-1.72863 -1.48705,-2.28624 -2.4535,-2.91819c-0.96645,-0.63195 -2.3792,-0.85503 -2.00745,-0.8922c-0.5948,0.03717 3.19705,-0.5948 5.35321,3.64315c2.15615,4.23796 -1.1896,8.77332 -3.49445,9.81422c-2.30486,1.0409 -4.08926,1.1896 -6.31976,0.37175c-1.11525,-0.40892 -1.97028,-1.487 -2.5465,-2.46284c-0.28811,-0.48793 -0.5065,-0.95029 -0.65289,-1.29067c-0.14637,-0.34038 -0.22072,-0.55878 -0.22072,-0.55878" />
+              <path stroke="null" id="svg_c_7"
+                d="m15.951,11.74075c0,0 0.22305,-2.00745 0.96656,-2.60225c0.7435,-0.5948 2.0818,1.1896 2.0818,1.1896c0,0 0.81785,2.45355 -0.22305,2.89965c-1.0409,0.4461 -2.0818,-0.2974 -2.0818,-0.2974c0,0 -0.7435,-1.1896 -0.7435,-1.1896z"
+                opacity="NaN" fill="#000000" />
+              <path stroke="null" id="svg_c_8"
+                d="m13.83052,23.15197l-1.22579,6.84071c0.03623,0.03646 -0.33551,2.2669 0.18492,3.60515c0.52043,1.33824 1.41261,2.60217 2.37913,1.59848c0.96652,-1.00369 -0.59478,-1.89587 -0.631,-1.93233c0.03622,0.03646 -0.224,-1.8966 0.37078,-4.46157c0.59478,-2.56498 1.33826,-5.24152 1.30204,-5.27798c0.03622,0.03646 0.25926,-1.22745 -0.9303,-1.89658c-1.18956,-0.66913 -1.07614,0.26164 -1.37448,0.03789c-0.29834,-0.22375 -0.0753,1.48624 -0.0753,1.48624l0,0l0,0z"
+                opacity="NaN" fill="#000000" />
+              <path stroke="null" id="svg_c_9"
+                d="m21.00603,21.85159c0.03622,0.03646 0.11057,0.89146 -0.0753,2.26689c-0.18587,1.37543 -1.18957,7.02586 -1.22578,6.98941c0.03622,0.03645 -0.52138,3.12188 0.14775,3.93971c0.66913,0.81783 1.97021,0.63196 2.00739,-0.48326c0.03717,-1.11522 1.78435,-3.9776 3.2713,-5.6876c1.48695,-1.71 3.68021,-3.34565 3.64399,-3.3821c0.03622,0.03646 0.59383,4.86906 0.89122,6.02145c0.29739,1.15239 1.22674,3.86608 2.93674,2.23043c1.71,-1.63565 1.8587,-3.01108 3.04826,-4.27499c1.18957,-1.26391 2.41821,-2.74945 2.56595,-2.86168c0.14775,-0.11223 0.55666,3.71667 0.52043,3.68021c0.03623,0.03646 0.81688,4.3858 2.26665,4.23711c1.44978,-0.14869 1.4126,-1.41261 1.37637,-1.44907c0.03623,0.03646 -1.97115,-3.53223 -1.74811,-4.75897c0.22304,-1.22673 -0.29739,-4.1263 -0.33361,-4.16275c0.03623,0.03646 -0.29833,-1.26463 -2.15703,0.03646c-1.85871,1.30109 -2.91677,2.32447 -3.9395,3.82963c-1.02275,1.50515 -2.01744,2.92684 -2.21266,3.0755c-0.19522,0.14867 -0.46477,-0.6529 -0.59024,-1.84712c-0.12548,-1.19422 -0.29276,-2.63239 -0.24629,-4.20299c0.09293,-3.14121 -1.22484,-2.86098 -1.18861,-2.82452c0.03622,0.03646 -2.74995,1.63639 -4.12632,3.15978c-1.37637,1.5234 -3.27032,3.19768 -3.64302,3.94044c-0.37269,0.74275 0.59383,-3.01181 0.55761,-3.04827c0.03623,0.03646 1.00276,-5.24224 0.44514,-6.39463c-0.55762,-1.15239 -1.52412,-0.66913 -1.56036,-0.70559c0.01812,0.01823 -0.88354,0.16674 -1.2229,1.175l0.59095,1.50152l-0.00001,0l0,0l0,0l-0.00001,0l0.00001,0l0,-0.00001z"
+                opacity="NaN" fill="#000000" />
+            </g>
+          </g>
+        </svg></a>
+      <a href="javascript:;" class="btn btn-sm btn-radius btn-round mb-0 ms-auto d-lg-none d-block buy-now">现在定制</a>
+
+      <button class="navbar-toggler shadow-none ms-md-2" type="button" data-bs-toggle="collapse" data-bs-target="#npnav"
+        aria-controls="npnav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon mt-2">
+          <span class="navbar-toggler-bar bar1"></span>
+          <span class="navbar-toggler-bar bar2"></span>
+          <span class="navbar-toggler-bar bar3"></span>
+        </span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="npnav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-3" id="nmenu">
+
+        </ul>
+        <ul class="navbar-nav d-lg-block d-none">
+          <li class="nav-item">
+            <a href="javascript:;" class="btn btn-sm btn-radius buy-now mb-0 me-3">现在定制</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <div class="page-header min-vh-75 relative banner">
+    <span class="mask bg-gradient-primary"></span>
+    <div class="position-absolute w-100 z-index-1 mt-5">
+      <svg class="waves mt-5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 40" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"></path>
+        </defs>
+        <g class="moving-waves">
+          <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40"></use>
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)"></use>
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)"></use>
+          <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)"></use>
+          <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)"></use>
+          <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,0.95"></use>
+        </g>
+      </svg>
+    </div>
+  </div>
+
+  <div id="htmlcapture">
+
+    <!-- 说明 -->
+    <section class="ms-3 me-3 pt-1 pb-4 mb-5 z-index-sticky  wow fadeInUp" id="count-stats">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 z-index-3 border-radius-xl mt-n7 mx-auto py-3 blur shadow-blur">
+            <div class="row">
+              <div class="col-md-12 position-relative">
+                <div class="p-3 text-center wow bounceIn">
+                  <h1 class="text-gradient text-danger"><span id="pname">九方文档</span>+</h1>
+                  <h4 class="mt-3 sub-title">欢迎使用九方文档系统</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!-- 模版列表 -->
+    <section class="m-3 p-3 wow fadeInUp">
+      <div class="container">
+        <div class="site-heading text-center">
+          <h2 class="area-title">文档列表</h2>
+          <div class="devider"></div>
+        </div>
+        <div class="row">
+          <div class="col-lg-9 border-radius-xl mx-auto py-3 blur shadow-blur">
+            <div class="row">
+              <div class="col-md-3">
+                <button class="btn btn-outline-warning btn-sm expandAll">展开列表</button>
+                <ul id="ztree" class="ztree flex-column" role="ztree"></ul>
+              </div>
+              <div class="col-md-9" id="content"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  <!--  -->
+  <div class="footer mt-2">
+    <div class="row">
+      <div class="col-sm-6"></div>
+      <div class="col-sm-6"></div>
+      <div class="col-12 pt-5 text-center small">&copy;2022 imccc.cc<br><br>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var n, tpl, treeexp = true, ztopt, setting = {
+      callback: {
+        onClick: zTreeOnClick
+      }
+    };
+    //菜单
+    function menu(params) {
+      if (typeof params != "") {
+        params.forEach(me => {
+          var mtpl = `<li class="nav-item"><a href="javascript:;" class="nav-link" onclick="init(this,'${me.json}')">${me.name}</a></li>`;
+          $("#nmenu").append(mtpl);
+        })
+      }
+    }
+    function bindonclick() {
+      //实现点击跳转
+      $('#quick a').unbind();
+      $('#quick a').bind('click', function () {
+        var _obj = $(this).attr('data-i');
+        _obj = $('a[name=label' + _obj + ']');
+        var _top = _obj.position().top;
+        _top -= 80;
+        $('html,body').animate({ scrollTop: _top }, 500);
+      })
+    }
+
+    // 单击事件
+    function zTreeOnClick(e, treeid, treeNode) {
+      var mdf = treeNode.show;
+      $.get(mdf, function (res, status) {
+        fc = (status == "success") ? marked.parse(res) : "未知内容";
+        // if (fc.match(/^sequenceDiagram/) || fc.match(/^graph/)) {
+        //   console.log("code", code)
+        //   fc = '<div class="mermaid">' + code + '</div>';
+        // }
+        $("#content").html(fc);
+        $(".area-title").html(treeNode.name)
+        n.codelight();
+        n.GenerateList();
+        bindonclick();
+      })
+    };
+    /**
+     * 初始化列表
+     */
+    function init(e, f) {
+      $(function () {
+        $.get('/assets/json/' + f, function (data) {
+          if (data != null) {
+            $.fn.zTree.init($("#ztree"), ztopt, data);
+            $("#content").html('')
+            $(".area-title").html('文档列表')
+            $(".sub-title").html(e.text)
+            treeexp = true
+            data.forEach(fmd => {
+              if (fmd.id == 1) {
+                $("#ztree_1_a").trigger("click").focus()
+              }
+            });
+          }
+          n.GenerateList();
+        })
+        bindonclick();
+      });
+    }
+    /**
+     * 树
+     **/
+    $(".expandAll").on('click', function () {
+      var t = treeexp == false ? "展开列表" : "折叠列表"
+      var c = "btn btn-outline-warning btn-sm"
+      var v = "btn btn-outline-info btn-sm"
+      if (treeexp) {
+        $.fn.zTree.getZTreeObj("ztree").expandAll(true);
+        treeexp = false
+        $(".expandAll").html(t).removeClass(c).addClass(v);
+      } else {
+        $.fn.zTree.getZTreeObj("ztree").expandAll(false);
+        treeexp = true
+        $(".expandAll").html(t).removeClass(v).addClass(c);
+      }
+
+    })
+
+    $.get("/assets/json/opts.json", function (opt) {
+      n = $(this).nui(opt.opts)
+      ztopt = Object.assign(opt.ztree, setting)
+      //执行初始化
+      $(document).ready(function () {
+        n.nload(['animate.css', 'wow.js', 'marked.js', 'ztree.js', 'ztree.css'], function () {
+          menu(opt.menu)
+          var wow = new WOW(
+            opt.wow
+          );
+          wow.init();
+          var rmd = new marked.Renderer();
+          init(this, opt.opts.welocme);
+          $("title").text(opt.opts.name);
+          $("#pname").html(opt.opts.name)
+        })
+      })
+    });
+
+  </script>
+
+</body>
+
+</html>
