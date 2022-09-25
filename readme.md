@@ -39,7 +39,7 @@
 
 - __[WOW.js](https://www.delac.io/WOW/)__ - WOW.js 实现了在网页滚动时的动画效果。需要 Animate.css 项目的支持。
 
-- __[google-code-prettify](https://github.com/googlearchive/code-prettify)__ - google-code-prettify一个优秀精巧的代高亮工具
+- __[google-code-prettify](https://github.com/googlearchive/code-prettify)__ - google-code-prettify一个优秀精巧的代码高亮工具
 
 - __[QRCode.js](https://github.com/davidshimjs/qrcodejs)__ - QRCode.js 是一个用于生成二维码的 JavaScript 库。主要是通过获取 DOM 的标签,再通过 HTML5 Canvas 绘制而成,不依赖任何库。
 
