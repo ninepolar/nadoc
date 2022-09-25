@@ -1,4 +1,4 @@
-![blockchain](../assets/cms/img/logo.svg "九方科技")
+![blockchain](./assets/cms/img/logo.svg "九方科技")
 
 ## 更新记录
 版本|作者|时间|描述
