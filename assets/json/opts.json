@@ -69,13 +69,13 @@
   "menu": [
     {
       "id": "2",
-      "name": "三体",
-      "json": "3t.json"
+      "name": "振兴联盟",
+      "json": "zxlmapi.json"
     },
     {
       "id": "3",
-      "name": "寻秦记",
-      "json": "xqj.json"
+      "name": "哈尔滨公共服务",
+      "json": "harbin.json"
     }
   ]
 }

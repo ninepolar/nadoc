@@ -170,6 +170,17 @@
             return (S4() + S4() + "-" + S4() + "-" + S4() + "-" + S4() + "-" + S4() + S4() + S4());
         },
 
+        switchel:function(ele,v1,v2){
+            var sm1,sm2;
+            var sm1 = sm2 = true;
+            if(sm1==true){
+                $(ele).removeClass(v1).addClass(v2);
+                sm1 = false;
+            }else{
+                $(ele).removeClass(v2).addClass(v1);
+                sm1 = false;
+            }
+        },
         //localStroreage
         _lSS: function () {
             return (('localStorage' in window) && window['localStorage'] !== null)

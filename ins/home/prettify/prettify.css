@@ -15,7 +15,6 @@
 }
 .alert::before{
   content: ' TIPS: ';
-  
 }
 
 pre.prettyprint {
