@@ -117,11 +117,13 @@ blockquote {
 }
 .tips{
     padding: 3px 5px ;
+    color: #8a8a8a;
     background-color: #ffecc7;
     border-radius: 0.3rem;
 }
 .tips::before {
     content: '  TIPS: ';
+    color: #fff;
 }
 
 /**-------------------------------------------
