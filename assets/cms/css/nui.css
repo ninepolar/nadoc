@@ -188,6 +188,7 @@ blockquote {
     padding: 40px 0;
     color: #3d3c3c;
     background: #e8e8e8;
+    z-index: -1;
 }
 
 /* site heading */

@@ -4,10 +4,24 @@
   --background: #fad7fcab;
   --secondary: #e3a9fde7;
   --border: #e793f8;
-  --color: #d03cdd;
+  --color: #9d9a9a;
   --pln: #3c484d;
 }
-
+.copy{
+  padding: 3px 5px;
+  border-radius: 0 0 6px  0 ;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  line-height: 1;
+  cursor: pointer;
+  color: #b8b8b8cc;
+  transition: color .1s;
+  border-right: 1px var(--color) solid;
+  border-bottom: 1px var(--color) solid;
+}
 .alert-secondary {
   background-color: var(--background);
   border:1px solid var(--border);
@@ -20,7 +34,7 @@
 pre.prettyprint {
   background: #fbfbfb;
   font-family: Menlo, "Bitstream Vera Sans Mono", "DejaVu Sans Mono", Monaco, Consolas, monospace;
-  border: 1px solid var(--border) !important;
+  border: 1px solid var(--color) !important;
   /* border-left: 4px solid var(--border) !important; */
   border-radius: 6px 0 0 6px;
   color: var(--color);
@@ -31,8 +45,8 @@ pre.prettyprint {
   tab-size: 4;
   -moz-tab-size: 4;
   white-space: pre-wrap!important;
-word-wrap: break-word!important;
-*white-space:normal!important;
+  word-wrap: break-word!important;
+  *white-space:normal!important;
 }
 
 .pln {

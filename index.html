@@ -172,8 +172,23 @@
         })
       }
     }
+
+    //实现点击跳转
     function bindonclick() {
-      //实现点击跳转
+      let btn = $("<span class=\"copy position-absolute \">复制代码</span>");
+      $("#content pre").before(btn)
+
+      //绑定复制代码
+      $('#content span').unbind();
+      $('#content span').bind('click', '.copy', function () {
+        var content = $(this).next().text();
+        var clipboard = new ClipboardJS('.copy', {
+          text: function () {
+            n.msg("copyit!")
+            return content;
+          }
+        });
+      })
       $('#quick a').unbind();
       $('#quick a').bind('click', function () {
         var _obj = $(this).attr('data-i');
@@ -194,14 +209,15 @@
         n.codelight();
         n.GenerateList();
         bindonclick();
+        $("html,body").animate({scrollTop:'0px'},300)
       })
     };
     /**
      * 初始化列表
      */
     function init(e, f) {
-      $(function () {
-        $.get('/assets/json/' + f, function (data) {
+      $.when(
+        $.get('/assets/json/' + f + '?t=' + Date.now(), function (data) {
           if (data != null) {
             $.fn.zTree.init($("#ztree"), ztopt, data);
             $("#content").html('')
@@ -214,10 +230,10 @@
               }
             });
           }
-          n.GenerateList();
-        })
-        bindonclick();
-      });
+        }).done(
+          n.GenerateList(),
+          bindonclick()
+        ))
     }
     /**
      * 树
@@ -254,13 +270,14 @@
       }
     });
 
+
     //请求配置文件
     $.get("/assets/json/opts.json", function (opt) {
       n = $(this).nui(opt.opts)
       ztopt = Object.assign(opt.ztree, setting)
       //执行初始化
       $(document).ready(function () {
-        n.nload(['animate.css', 'wow.js', 'marked.js', 'ztree.js', 'ztree.css'], function () {
+        n.nload(['animate.css', 'wow.js', 'marked.js', 'ztree.js', 'ztree.css', 'clipboard.js'], function () {
           menu(opt.menu)
           var wow = new WOW(
             opt.wow

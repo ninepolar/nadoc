@@ -60,7 +60,7 @@
       }
     },
     "callback": {
-      "onClick": "onClick()"
+      "onClick": ""
     },
     "edit": {
       "enable": false
@@ -69,13 +69,18 @@
   "menu": [
     {
       "id": "2",
-      "name": "振兴联盟",
-      "json": "zxlmapi.json"
+      "name": "样例",
+      "json": "demo.json"
     },
     {
       "id": "3",
-      "name": "哈尔滨公共服务",
-      "json": "harbin.json"
+      "name": "振兴联盟",
+      "json": "zxlmapi.json"
+    } ,
+    {
+      "id": "4",
+      "name": "学习经验",
+      "json": "study.json"
     }
   ]
 }

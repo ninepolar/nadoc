@@ -1,9 +1,8 @@
 ![blockchain](../assets/cms/img/logo.svg "九方科技")  <br><br>
-## 更新记录
+
+## 引言
 ---
-版本|作者|时间|描述
-:---|:---|:---|:---
-1.0|<sam@imccc.net>|2022/09/25|第一版,小小的嘚瑟一下  
+>市面上各种文档架设都非常的高级，已致于都学不会了，于是用了一天时间撸了一个简单的文档系统，纯静态环境，随便有一个空间就可以运行，不用node.js，不用vue，不用npm。简简单单，有个能访问的空间就行，哪怕只有几m空间。文档是markdown格式，写好上传即可，虽然小巧、但是功能也马马虎虎了,非常适合小萌新使用
 
 <br><br>
 
@@ -12,16 +11,11 @@
 __[码云](https://gitee.com/imccc_net/nadoc)__
 __[GITHUB](https://github.com/ninepolar/nadoc)__   <br><br>
 
-## 引言
----
->市面上各种文档架设都非常的高级，已致于都学不会了，于是用了一天时间撸了一个简单的文档系统，纯静态环境，随便有一个空间就可以运行，不用node.js，不用vue，不用npm。简简单单，有个能访问的空间就行，哪怕只有几m空间。文档是markdown格式，写好上传即可，虽然小巧、但是功能也马马虎虎了,非常适合小萌新使用
-
-<br><br>
-
 ## 功能
 ---
 + 项目大类,可以同时放置若干项目文档
 + 文档列表无线分类
++ 代码块复制
 + Markdown文件渲染
 + 文档内目录生成导航(从H2开始编录，支持到H3,其它标题不支持列入，防止爆屏，以后再细化)
 + 滚屏浏览（滚动时不可选择，以保证效果）
@@ -51,7 +45,11 @@ __[GITHUB](https://github.com/ninepolar/nadoc)__   <br><br>
 
 - __[google-code-prettify](https://github.com/googlearchive/code-prettify)__ - google-code-prettify一个优秀精巧的代高亮工具
 
-- __[QRCode.js](https://github.com/davidshimjs/qrcodejs)__ - QRCode.js 是一个用于生成二维码的 JavaScript 库。主要是通过获取 DOM 的标签,再通过 HTML5 Canvas 绘制而成,不依赖任何库。 <br><br>
+- __[QRCode.js](https://github.com/davidshimjs/qrcodejs)__ - QRCode.js 是一个用于生成二维码的 JavaScript 库。主要是通过获取 DOM 的标签,再通过 HTML5 Canvas 绘制而成,不依赖任何库。
+
+- __[clipboard.js](https://clipboardjs.com)__ 将文本复制到剪贴板应该不难。它不需要数十个步骤来配置或数百个KB来加载。但最重要的是，它不应该依赖Flash或任何臃肿的框架。这就是clipboard.js存在的原因。
+
+ <br><br>
 
 ## 主题风格
 ---

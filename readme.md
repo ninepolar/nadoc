@@ -51,7 +51,10 @@ __[GITHUB](https://github.com/ninepolar/nadoc)__   <br><br>
 
 - __[google-code-prettify](https://github.com/googlearchive/code-prettify)__ - google-code-prettify一个优秀精巧的代高亮工具
 
-- __[QRCode.js](https://github.com/davidshimjs/qrcodejs)__ - QRCode.js 是一个用于生成二维码的 JavaScript 库。主要是通过获取 DOM 的标签,再通过 HTML5 Canvas 绘制而成,不依赖任何库。 <br><br>
+- __[QRCode.js](https://github.com/davidshimjs/qrcodejs)__ - QRCode.js 是一个用于生成二维码的 JavaScript 库。主要是通过获取 DOM 的标签,再通过 HTML5 Canvas 绘制而成,不依赖任何库。
+
+- __[clipboard.js](https://clipboardjs.com)__ 将文本复制到剪贴板应该不难。它不需要数十个步骤来配置或数百个KB来加载。但最重要的是，它不应该依赖Flash或任何臃肿的框架。这就是clipboard.js存在的原因。
+ <br><br>
 
 ## 主题风格
 ---
